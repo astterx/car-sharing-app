@@ -1,7 +1,7 @@
 package com.carsharingapp.service;
 
-import com.ing.switchtojava.carpoolingapi.domain.Ride;
-import com.ing.switchtojava.carpoolingapi.repository.RideRepository;
+import com.carsharingapp.domain.Ride;
+import com.carsharingapp.repository.RideRepository;
 import org.springframework.stereotype.Service;
 
 @Service

@@ -1,12 +1,12 @@
 package com.carsharingapp.service;
 
-import com.ing.switchtojava.carpoolingapi.domain.Car;
-import com.ing.switchtojava.carpoolingapi.domain.Driver;
-import com.ing.switchtojava.carpoolingapi.domain.Location;
-import com.ing.switchtojava.carpoolingapi.domain.Ride;
-import com.ing.switchtojava.carpoolingapi.repository.CarRepository;
-import com.ing.switchtojava.carpoolingapi.repository.DriverRepository;
-import com.ing.switchtojava.carpoolingapi.repository.LocationRepository;
+import com.carsharingapp.domain.Car;
+import com.carsharingapp.domain.Driver;
+import com.carsharingapp.domain.Location;
+import com.carsharingapp.domain.Ride;
+import com.carsharingapp.repository.CarRepository;
+import com.carsharingapp.repository.DriverRepository;
+import com.carsharingapp.repository.LocationRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;

@@ -1,10 +1,10 @@
 package com.carsharingapp.rest;
 
-import com.ing.switchtojava.carpoolingapi.domain.Location;
-import com.ing.switchtojava.carpoolingapi.repository.LocationRepository;
+import com.carsharingapp.domain.Location;
+import com.carsharingapp.exception.LocationNotFoundException;
+import com.carsharingapp.repository.LocationRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
@@ -28,17 +28,11 @@ public class LocationController {
     @GetMapping("{id}")
     public Location findById(@PathVariable Long id) {
         return repository.findById(id)
-                .orElseThrow(() -> new LocationNotFoundException());
+                .orElseThrow(LocationNotFoundException::new);
     }
 
     @PutMapping
     public Location save(@Valid @RequestBody Location location) {
         return repository.save(location);
-    }
-
-    @ExceptionHandler
-    @ResponseStatus(HttpStatus.NOT_FOUND)
-    public void handleLocationNotFound(LocationNotFoundException e) {
-        log.warn("handleLocationNotFound - " + e);
     }
 }

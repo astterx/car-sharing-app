@@ -1,6 +1,7 @@
 package com.carsharingapp.rest;
 
-import com.ing.switchtojava.carpoolingapi.exception.DriverNotFoundException;
+import com.carsharingapp.exception.DriverNotFoundException;
+import com.carsharingapp.exception.LocationNotFoundException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
@@ -16,6 +17,12 @@ public class AdviceController {
     @ResponseStatus(HttpStatus.NOT_FOUND)
     public void handleDriverNotFound(DriverNotFoundException e) {
         log.warn("handleDriverNotFound - " + e);
+    }
+
+    @ExceptionHandler(LocationNotFoundException.class)
+    @ResponseStatus(HttpStatus.NOT_FOUND)
+    public void handleLocationNotFound(LocationNotFoundException e) {
+        log.warn("handleLocationNotFound - " + e);
     }
 }
 

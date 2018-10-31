@@ -1,6 +1,6 @@
 package com.carsharingapp.rest.model;
 
-import com.ing.switchtojava.carpoolingapi.domain.Car;
+import com.carsharingapp.domain.Car;
 
 import java.util.List;
 

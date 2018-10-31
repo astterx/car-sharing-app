@@ -1,4 +1,4 @@
-package com.carsharingapp.rest;
+package com.carsharingapp.exception;
 
 public class LocationNotFoundException extends RuntimeException {
 }

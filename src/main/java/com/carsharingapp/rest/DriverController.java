@@ -1,9 +1,9 @@
 package com.carsharingapp.rest;
 
-import com.ing.switchtojava.carpoolingapi.domain.Car;
-import com.ing.switchtojava.carpoolingapi.domain.Driver;
-import com.ing.switchtojava.carpoolingapi.rest.model.CarListRequest;
-import com.ing.switchtojava.carpoolingapi.service.DriverService;
+import com.carsharingapp.domain.Car;
+import com.carsharingapp.domain.Driver;
+import com.carsharingapp.rest.model.CarListRequest;
+import com.carsharingapp.service.DriverService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;

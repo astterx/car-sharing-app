@@ -1,6 +1,6 @@
 package com.carsharingapp.repository;
 
-import com.ing.switchtojava.carpoolingapi.domain.Car;
+import com.carsharingapp.domain.Car;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;

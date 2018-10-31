@@ -1,9 +1,9 @@
 package com.carsharingapp.service;
 
-import com.ing.switchtojava.carpoolingapi.domain.Car;
-import com.ing.switchtojava.carpoolingapi.domain.Driver;
-import com.ing.switchtojava.carpoolingapi.exception.DriverNotFoundException;
-import com.ing.switchtojava.carpoolingapi.repository.DriverRepository;
+import com.carsharingapp.domain.Car;
+import com.carsharingapp.domain.Driver;
+import com.carsharingapp.exception.DriverNotFoundException;
+import com.carsharingapp.repository.DriverRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
